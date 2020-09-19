@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title> SARAS : Pilot </title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: centre">SARAS</h1>
+    <h2 style="text-align: centre">Self Assessment and Risk Analysis System</h2>
+    <h2 style="text-align: centre">Update Patient</h2>
+    <form action="/update/{{task.id}}" method="POST" >
+        <label for="name">Name </label><br>
+        <input type="text" placeholder="Name" name="name" value="{{task.name}}"><br>
+        <label for="age">Age </label><br>
+        <input type="number" placeholder="Age" name="age" value="{{task.age}}"><br>
+        <label for="adr">Address </label><br>
+        <input type="text" placeholder="Address" name="adr" value="{{task.adr}}"><br>
+        <p></p>
+        <input type = "submit" value = "Update Patient" />
+    </form>
+</div>
+{% endblock %}

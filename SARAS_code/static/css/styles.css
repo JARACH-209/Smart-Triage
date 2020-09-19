@@ -1,0 +1,144 @@
+html {
+  font-family: ;
+}
+
+nav,
+header,
+footer {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  margin: 0;
+}
+
+nav ul {
+  width: 100%;
+  margin: 0px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  text-decoration: midnightblue;
+  padding: 15px;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  color: red;
+}
+
+ul.topbar li,
+ul.bottom li {
+  list-style: none;
+  float: left;
+}
+
+ul.topbar li.topbar-right {
+  float: right;
+}
+
+ul.topbar li a,
+ul.bottom li a {
+  display: block;
+  font-size: 2rem;
+  min-height: 1rem;
+  text-align: center;
+  padding: 20px;
+}
+
+ul.bottom li a {
+  padding-top: 0px;
+}
+
+ul.topbar li a:hover {
+  color: red;
+}
+
+ul.topbar li.dropdownicon {
+  display: none;
+}
+
+.heading1 {
+  font-size: 2rem;
+  display: block;
+  margin: auto;
+  color: midnightblue;
+  justify-content: center;
+  text-align: center;
+}
+
+.clickable {
+  text-align: center;
+  justify-content: center;
+}
+
+button {
+  color: goldenrod;
+  background-color: midnightblue;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.5rem;
+  padding: 1rem 4rem;
+}
+
+ul.bottom li.bottom-right {
+  float: right;
+}
+
+img {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.image {
+  max-width: 10%;
+}
+
+.botton {
+  max-width: 90%;
+}
+
+.logo {
+  height: auto;
+}
+
+@media screen and (max-width: 755px) {
+  ul.topbar li:not(:nth-child(1)) {
+    display: none;
+  }
+
+  ul.topbar li.dropdownicon {
+    display: block;
+    float: right;
+  }
+
+  ul.topbar.responsive li.dropdownicon {
+    position: absolute !important;
+    top: 0px;
+    right: 0px;
+  }
+
+  ul.topbar.responsive {
+    position: relative;
+  }
+
+  ul.topbar.responsive li {
+    display: inline;
+    float: none;
+  }
+
+  ul.topbar.responsive li a {
+    display: block;
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  ul.bottom li a {
+    font-size: 1rem;
+  }
+}
